@@ -8,51 +8,27 @@ const Blogs = () => {
     return (
        <section className='px-12'>
            <div className='pt-12'>
-               <h4 className='text-3xl'>1. How will you improve the performance of a React Application?</h4>
+               <h4 className='text-3xl'>1. Difference between javascript and nodejs</h4>
                <p>
-                <span className='text-xl'><u>Answer:</u> </span>
-                A. Keeping component state local where necessary.<br/>
-                B. Memoizing React components to prevent unnecessary re-renders.<br/>
-                C. Code-splitting in React using dynamic import()<br/>
-                D. Windowing or list virtualization in React.<br/>
-                E. Lazy loading images in React
+                <span className='text-xl'><u>Answer:</u> </span>JavaScript is a simple programming language that runs in any browser JavaScript Engine. Whereas Node JS is an interpreter or running environment for a JavaScript programming language that holds many excesses, it requires libraries that can easily be accessed from JavaScript programming for better use.
                </p>
            </div>
            <div className='pt-12'>
-               <h4 className='text-3xl'>2. What are the different ways to manage a state in a React application?</h4>
+               <h4 className='text-3xl'>2.When should you use nodejs and when should you use mongodb</h4>
                <p>
                 <span className='text-xl'><u>Answer:</u>  </span>
-                There are four main types of state you need to properly manage in your React apps:<br/>
-                A. Local state.<br/>
-                b. Global state.<br/>
-                C. Server state.<br/>
-                D. URL state.
+                MongoDB and NodeJS are two different technologies. MonogDB is a database system which gives you a chance to efficiently store documents in a database and to perform operations like data updates, or to search documents by some criterias. NodeJS's responsibilty is especially to execute your application.
                </p>
            </div>
            <div className='pt-12'>
-               <h4 className='text-3xl'>3. How does prototypical inheritance work?</h4>
+               <h4 className='text-3xl'>3.Differences between sql and nosql databases.</h4>
                <p>
                 <span className='text-xl'><u>Answer:</u>  </span>
-                The Prototypal Inheritance is a feature in javascript used to add methods and properties in objects. It is a method by which an object can inherit the properties and methods of another object. Traditionally, in order to get and set the [[Prototype]] of an object, we use Object. getPrototypeOf and Object.
+                SQL databases are vertically scalable, while NoSQL databases are horizontally scalable. SQL databases are table-based, while NoSQL databases are document, key-value, graph, or wide-column stores. SQL databases are better for multi-row transactions, while NoSQL is better for unstructured data like documents or JSON.
                </p>
            </div>
-           <div className='pt-12'>
-               <h4 className='text-3xl'>4. Why you do not set the state directly in React?</h4>
-               <p>
-                <span className='text-xl'><u>Answer:</u>  </span>
-                One should never update the state directly because of the following reasons:<br/>
-                A. If you update it directly, calling the setState() afterward may just replace the update you made.<br/>
-                B. When you directly update the state, it does not change this.state immediately. Instead, it creates a pending state transition, and accessing it after calling this method will only return the present value.<br/>
-                C. You will lose control of the state across all components.
-               </p>
-           </div>
-           <div className='pt-12'>
-               <h4 className='text-3xl'>5. What is a unit test? Why should write unit tests?</h4>
-               <p>
-                <span className='text-xl'><u>Answer:</u>  </span>
-                The main objective of unit testing is to isolate written code to test and determine if it works as intended. Unit testing is an important step in the development process, because if done correctly, it can help detect early flaws in code which may be more difficult to find in later testing stages.
-               </p>
-           </div>
+           
+           
        </section>
     );
 };
