@@ -12,6 +12,8 @@ import AddItem from './Pages/AddItem/AddItem';
 import ManageItems from './Pages/ManageItems/ManageItems';
 import NotFound from './Pages/Shared/NotFound';
 import SignUp from './Pages/Login/SignUp';
+import ItemDetail from './Pages/ItemDetail/ItemDetail';
+import Checkout from './Pages/ItemDetail/Checkout/Checkout';
 
 function App() {
   return (
@@ -23,6 +25,8 @@ function App() {
         <Route path="myitems" element={<RequireAuth><MyItems/></RequireAuth>} />
         <Route path="manageitems" element={<RequireAuth><ManageItems/></RequireAuth>} />
         <Route path="additems" element={<RequireAuth><AddItem /></RequireAuth>} />
+        <Route path="checkout" element={<RequireAuth><Checkout/></RequireAuth>} />
+        <Route path='/item/:itemId' element={<ItemDetail></ItemDetail>}></Route>
         
 
         {/* <Route path="about" element={<About />} /> */}
