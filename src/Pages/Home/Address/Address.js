@@ -5,7 +5,7 @@ import React from 'react';
 const Address = () => {
    
     return (
-        <footer class="footer p-10 bg-accent text-neutral-content">
+        <footer className="footer p-10 bg-accent text-neutral-content">
         <div>
           <h2 className='text-3xl'>Opu Traders</h2>
           <h5>Address: Mirpur 14</h5>
