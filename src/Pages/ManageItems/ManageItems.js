@@ -20,11 +20,11 @@ const ManageItems = () => {
         }
     }
     return (
-        <div className='w-50 mx-auto'>
-            <h2>Manage your items</h2>
+        <div className='w-50 mx-auto text-center'>
+            <h2 className='text-2xl mb-5'>Manage your items</h2>
             {
                 items.map(item => <div key={item._id}>
-                    <h5>{item.name} <button onClick={() => handleDelete(item._id)}>X</button></h5>
+                    <h5 className='text-xl mb-3'>{item.name} <button className="btn " onClick={() => handleDelete(item._id)}>X</button></h5>
                     
                 </div>)
             }
